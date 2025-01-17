@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+                integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="home.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+                rel="stylesheet">
+</head>
+
+<body>
+        <nav>
+                <div class="logo">
+                        <img src="images/vedhaka logo.png" alt="vedhaka-logo">
+                </div>
+                <div class="nav-lists">
+                        <ul>
+                                <div class="lists-container">
+                                        <li><span class="icon dashboard"><i class="fa-solid fa-house"></i></span><span
+                                                        class="description display-none">Dashboard</span></li>
+                                </div>
+                                <div class="lists-container hidden-lists-container">
+                                        <li><span class="icon offers"><i
+                                                                class="fa-solid fa-earth-americas"></i></span><span
+                                                        class="description display-none">Offers</span><span
+                                                        class="arrow-sign"><i
+                                                                class="fa-solid fa-angle-right"></i></span></li>
+                                        <div class="hidden-list offers-hidden-list display-none">
+                                                <ul>
+                                                        <li class="display-none">Create Offer</li>
+                                                        <li class="display-none">Offers Live</li>
+                                                        <li class="display-none">Approved Request</li>
+                                                        <li class="display-none">Offer Affiliate Links</li>
+                                                </ul>
+                                        </div>
+                                </div>
+                                <div class="lists-container hidden-lists-container">
+                                        <li><span class="icon reports"><i class="fa-solid fa-chart-pie"></i></span><span
+                                                        class="description display-none">Reports</span><span
+                                                        class="arrow-sign"><i
+                                                                class="fa-solid fa-angle-right"></i></span></li>
+                                        <div class="hidden-list reports-hidden-list display-none">
+                                                <ul>
+                                                        <li>Reports</li>
+                                                        <li>Reports KPI</li>
+                                                        <li>Conversion Logs</li>
+                                                        <li>Affiliate Postback Logs</li>
+                                                        <li>Advertiser Postback Logs</li>
+                                                </ul>
+                                        </div>
+                                </div>
+                                <div class="lists-container hidden-lists-container">
+                                        <li><span class="icon affiliates"><i class="fa-solid fa-user"></i></span><span
+                                                        class="description display-none">Affiliates</span><span
+                                                        class="arrow-sign"><i
+                                                                class="fa-solid fa-angle-right"></i></span></li>
+                                        <div class="hidden-list affiliates-hidden-list display-none">
+                                                <ul>
+                                                        <li>Affiliates</li>
+                                                        <li>Pending Affiliates</li>
+                                                        <li>Affiliate Postback</li>
+                                                        <li>Affiliate Billing</li>
+                                                        <li>Postback Test</li>
+                                                </ul>
+                                        </div>
+                                </div>
+                                <div class="lists-container hidden-lists-container">
+                                        <li><span class="icon advertisers"><i
+                                                                class="fa-solid fa-user-tie"></i></span><span
+                                                        class="description display-none">Advertisers</span><span
+                                                        class="arrow-sign"><i
+                                                                class="fa-solid fa-angle-right"></i></span></li>
+                                        <div class="hidden-list advertisers-hidden-list display-none">
+                                                <ul>
+                                                        <li>Advertisers</li>
+                                                        <li>Advertiser's billing</li>
+                                                </ul>
+                                        </div>
+                                </div>
+                                <div class="lists-container hidden-lists-container">
+                                        <li><span class="icon fraud-detection"><i
+                                                                class="fa-solid fa-virus"></i></span><span
+                                                        class="description display-none">Fraud Detection</span><span
+                                                        class="arrow-sign"><i
+                                                                class="fa-solid fa-angle-right"></i></span></li>
+                                        <div class="hidden-list fraud-detection-hidden-list display-none">
+                                                <ul>
+                                                        <li>Advertisers</li>
+                                                        <li>Advertiser's billing</li>
+                                                </ul>
+                                        </div>
+                                </div>
+                                <div class="lists-container hidden-lists-container">
+                                        <li><span class="icon integration"><i
+                                                                class="fa-solid fa-network-wired"></i></span><span
+                                                        class="description display-none">Integration</span><span
+                                                        class="arrow-sign"><i
+                                                                class="fa-solid fa-angle-right"></i></span></li>
+                                        <div class="hidden-list integration-hidden-list display-none">
+                                                <ul>
+                                                        <li>Advertisers</li>
+                                                        <li>Advertiser's billing</li>
+                                                </ul>
+                                        </div>
+                                </div>
+                                <div class="lists-container hidden-lists-container">
+                                        <li><span class="icon account"><i class="fa-solid fa-user-gear"></i></span><span
+                                                        class="description display-none">Accounts</span><span
+                                                        class="arrow-sign"><i
+                                                                class="fa-solid fa-angle-right"></i></span></li>
+                                        <div class="hidden-list accounts-hidden-list display-none">
+                                                <ul>
+                                                        <li>Advertisers</li>
+                                                        <li>Advertiser's billing</li>
+                                                </ul>
+                                        </div>
+                                </div>
+                                <div class="lists-container">
+                                        <li><span class="icon billing"><i
+                                                                class="fa-solid fa-credit-card"></i></span><span
+                                                        class="description display-none">Billing</span></li>
+                                </div>
+                        </ul>
+                </div>
+        </nav>
+        <main>
+                <div class="top-nav">
+                        <div class="shortcuts"><span class="shortcut-icon top-nav-icons"><i
+                                                class="fa-solid fa-arrow-up-right-from-square"></i></span><span
+                                        class="shortcut">Shortcut</span><span
+                                        class="shortcut-down-arrow-icon top-nav-icons"><i
+                                                class="fa-solid fa-angle-down"></i></span></div>
+                        <div class="top-nav-list">
+                                <ul>
+                                        <li>What's new</li>
+                                        <li><span class="bell-icon top-nav-icons"><i
+                                                                class="fa-regular fa-bell"></i></span><span
+                                                        class="notification">Notifictions</span></li>
+                                        <li><span class="support-phone-icon top-nav-icons"><i
+                                                                class="fa-solid fa-phone"></i></span><span
+                                                        class="support">Support</span><span
+                                                        class="support-down-icon top-nav-icons"><i
+                                                                class="fa-solid fa-caret-down"></i></span></li>
+                                        <li><span class="language-globe-icon top-nav-icons"><i
+                                                                class="fa-solid fa-globe"></i></span><span
+                                                        class="language">Lang</span><span
+                                                        class="language-down-icon top-nav-icons"><i
+                                                                class="fa-solid fa-caret-down"></i></span></li>
+                                </ul>
+                        </div>
+                </div>
+                <div class="onboarding-steps">
+                        <div class="onboarding-steps-heading">
+                                <h5>Onboarding Steps</h5><span class="onboarding-steps-right-icon"><i
+                                                class="fa-solid fa-angle-right"></i></span>
+                        </div>
+                        <div class="onboarding-step-1 onboarding-div">
+                                <div class="clock-icon onboarding-step-icon"><i class="fa-solid fa-clock"></i></div>
+                                <div>
+                                        <div class="onboarding-step-number">Step 1</div>
+                                        <div class="step-feature">
+                                                <p>SMTP Setup</p>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="onboarding-step-2 onboarding-div">
+                                <div class="check-icon onboarding-step-icon"><i class="fa-solid fa-square-check"></i>
+                                </div>
+                                <div>
+                                        <div class="onboarding-step-number">Step 2</div>
+                                        <div class="step-feature">
+                                                <p>Create Affiliate</p>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="onboarding-step-3 onboarding-div">
+                                <div class="check-icon onboarding-step-icon"><i class="fa-solid fa-square-check"></i>
+                                </div>
+                                <div>
+                                        <div class="onboarding-step-number">Step 3</div>
+                                        <div class="step-feature">
+                                                <p>Create Advertisers</p>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="onboarding-step-4 onboarding-div">
+                                <div class="check-icon onboarding-step-icon"><i class="fa-solid fa-square-check"></i>
+                                </div>
+                                <div>
+                                        <div class="onboarding-step-number">Step 4</div>
+                                        <div class="step-feature">
+                                                <p>Create Offer</p>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </main>
+</body>
+
+</html>

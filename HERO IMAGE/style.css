@@ -1,0 +1,81 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+.container{
+    width:100vw;
+    height:100vh;
+    background-color: #BDCBD4;
+}
+.settings{
+    transform:rotate()
+}
+.settings1{
+    width:250px;
+    height:250px;
+    position:absolute;
+    left:600px;
+    top:100px;
+    animation-name:rotate;
+}
+.settings1 i{
+    font-size:250px;
+    color:#C8D5DB;
+}
+.settings2{
+    width:250px;
+    height:250px;
+    position:absolute;
+    left:200px;
+    top:180px;
+}
+.settings2 i{
+    font-size:200px;
+    color:#C8D5DB;
+}
+
+
+.settings3{
+    width:100px;
+    height:100px;
+    position:absolute;
+    left:123px;
+    top:120px;
+}
+.settings3 i{
+    font-size:100px;
+    color:#C8D5DB;
+}
+.settings4{
+    width:100px;
+    height:100px;
+    position:absolute;
+    left:156px;
+    top:564px;
+}
+.settings4 i{
+    font-size:100px;
+    color:#C8D5DB;
+}
+
+
+
+
+
+/*All the keyframes*/
+
+@keyframes rotate{
+    0%{
+         transform:rotate(90deg);
+    }
+    25%{
+        transform:rotate(180deg);
+    }
+    50%{
+        transform:rotate(270deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}

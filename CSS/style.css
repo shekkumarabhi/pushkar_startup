@@ -1,0 +1,279 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: "Roboto", serif;
+    background-color: white;
+    /* color:#FF7F3E; */
+}
+
+/*I am designing the nav bar of the web app*/
+.nav-bar{
+    padding:10px 40px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(177, 195, 206);
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+}
+.logo img{
+   width:100px;
+   height:35px;
+   color:red;
+}
+.register-login ul{
+    display:flex;
+    gap: 50px;
+}
+.register-login ul li{
+    list-style: none;
+}
+
+
+
+
+
+.container{
+    width:100vw;
+    height:92vh;
+    overflow:hidden;
+    background-color:rgb(189,203,212);
+    margin-top:59px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+
+
+
+/* the main container of the entire form*/
+.login-page{
+    width:100%;
+    height:100%; 
+    overflow:hidden;
+}
+
+
+.log-in-form-container{
+    padding:100px 70px;
+    height:100vh;
+    border:none;
+    /* display:flex; */
+    justify-content:center;
+    align-items: center;
+    /* background-color:red; */
+}
+.hero-image{
+    width:40%;
+    margin-right:60px;
+    border-right:2px solid rgb(169, 165, 165);
+}
+.hero-image img{
+   width:100%;
+   height:80%;
+}
+
+
+.login-form{
+    width:250px;
+    margin-right:50px;
+}
+.login-form legend{
+   color:black;
+}
+
+.login-form fieldset{
+    width:100%;
+    height:100%;
+    /* padding:30px; */
+    font-size:16px;
+    font-weight:400;
+    border:none;
+    text-align:left;
+    display:flex;
+    flex-direction:column;
+    /* color:white; */
+}
+
+
+
+/* I am designing the terms and conditions of the login page*/
+.terms-conditions{
+    vertical-align: middle;
+    font-size:12px;
+    margin-top:20px;
+    /* color:black; */
+    text-align:left;
+    display:flex;
+    justify-content: space-between;
+}
+/* .terms-conditions label{
+     
+} */
+.terms-conditions input{
+   vertical-align:middle;
+}
+.signup{
+    font-size:12px;
+    color:black;
+    cursor:pointer;
+}
+
+
+/*I am designing the signup button from here*/
+.submit{
+    margin-top:20px;
+    width:100%;
+    height:35px;
+    font-size:15px;
+    background-color:gray;
+    border:none;
+    border-radius: 20px;
+    font-weight:bold;
+    cursor:pointer;
+}
+.remember-me input{
+    width:16px;
+    height:16px;
+}
+.remember-me label{
+    color:black;
+    font-size:12px;
+    vertical-align:bottom;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*------I AM DESIGNING THE SIGNUP FORM OF THE WEBSITE----*/
+/*here i am designing the name and password part*/
+.sign-up-form-container{
+    height:100vh;
+    /* background-color: blue;  */
+    /* display:flex; */
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+/*I am designing the form container*/
+.sign-up-form{
+    width:500px;
+    padding:20px 40px;
+    /* background-color: red; */
+}
+
+.sign-up-form fieldset{
+    border:none;
+}
+.name-password{
+    display:flex;
+    justify-content: space-between;
+}
+.name-password fieldset{
+    width:49%;
+    font-size:18px;
+}
+
+
+
+
+/*now i am designing the cintact part of the form*/
+.contacts{
+    margin-top:30px;
+    font-size:18px;
+}
+/* .contacts .input-label{
+    
+} */
+
+.number-skypeID{
+    display:flex;
+    justify-content:space-between;
+}
+.number-skypeID .input-label{
+    width:49%;
+}
+.number-skypeID .input-label input{
+    width:100%;
+    
+}
+
+
+/*organistion-details*/
+.organisation-details{
+    margin-top:30px;
+    font-size:18px;
+}
+
+.sign-up-form-container .submit-sign-up-form-container input{
+    background-color: gray;
+}
+
+
+
+
+
+
+
+
+
+/*display property rules*/
+.display-none{
+    display:none;
+}
+.display-block{
+    display:block;
+}
+.display-flex{
+   display:flex;
+}
+
+
+
+/*input -label class design's*/
+.input-label{
+    display:flex;
+    flex-direction:column;
+    margin-top:5px;
+}
+
+.input-label input{
+    width:100%;
+    height:40px;
+    padding:10px;
+    margin-top:5px;
+    background-color:rgb(133, 157, 172);
+    color:black;
+    border-radius:5px;
+    border:none;
+    border-bottom:white;
+    padding:10px;
+    margin-top:5px;
+}
+
+
+
+.input-label input::placeholder{
+    color:rgb(73, 69, 69);
+}
+
+
+/*i am designing  a class for the clicked element*/
+.underline{
+    border-bottom:2px solid blue;
+}
+
