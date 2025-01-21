@@ -1,0 +1,10 @@
+// i have to again work on offers conversion, i have to make a list of it
+
+
+
+.onboarding-div .onboarding-step-number {
+    color: blue;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}

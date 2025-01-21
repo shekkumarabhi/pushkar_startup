@@ -55,3 +55,7 @@ for (let i = 0; i <= hiddenListsContainer.length - 1; i++) {
         hiddenListsContainer[i].classList.toggle('height-max-content')
     })
 }
+
+
+
+
