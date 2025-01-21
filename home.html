@@ -14,6 +14,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
                 rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -1779,10 +1780,26 @@
                                         </svg>
                                 </div>
                                 <div class="performance">
-
-
+                                        <p>Performance</p>
+                                        <canvas id="myChart"></canvas>
                                 </div>
                         </div>
+                </div>
+                <div class="entries-container">
+                        <table>
+                                <thead>
+                                        <tr>
+                                                <th>OfferID</th>
+                                                <th>GrossImpressions</th>
+                                                <th>GrossClicks</th>
+                                                <th>Conversions</th>
+                                                <th>AdvertisePrice</th>
+                                                <th>AffiliatePayout</th>
+                                                <th>Profit</th>
+                                                <th>Currency</th>
+                                        </tr>
+                                </thead>
+                        </table>
                 </div>
         </main>
 </body>

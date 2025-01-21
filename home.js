@@ -59,3 +59,65 @@ for (let i = 0; i <= hiddenListsContainer.length - 1; i++) {
 
 
 
+/*--------integarting my chart fromhere-------*/
+
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'line', // You can use other chart types like 'bar', etc.
+    data: {
+        labels: ['2-Jan', '5-Jan', '8-Jan', '11-Jan', '13-Jan', '16-Jan'], // x-axis labels
+        datasets: [
+            {
+                label: 'Dataset 1 (Left Y-Axis)',
+                data: [10, 20, 15, 25, 30, 40],
+                borderColor: 'blue',
+                borderWidth: 2,
+                yAxisID: 'yLeft', // Link this dataset to the left y-axis
+            },
+            {
+                label: 'Dataset 2 (Right Y-Axis)',
+                data: [50, 40, 35, 45, 60, 70],
+                borderColor: 'red',
+                borderWidth: 2,
+                yAxisID: 'yRight', // Link this dataset to the right y-axis
+            }
+        ]
+    },
+    options: {
+        responsive: true,
+        scales: {
+            x: {
+                title: {
+                    display: true,
+                }
+            },
+            yLeft: {
+                type: 'linear',
+                position: 'left',
+                title: {
+                    display: true,
+                },
+                ticks: {
+                    callback: function(value) {
+                        return value + ' units'; // Customize left y-axis tick labels
+                    }
+                }
+            },
+            yRight: {
+                type: 'linear',
+                position: 'right',
+                title: {
+                    display: true,
+                },
+                ticks: {
+                    callback: function(value) {
+                        return value + ' kg'; // Customize right y-axis tick labels
+                    }
+                },
+                grid: {
+                    drawOnChartArea: false // Avoid overlapping grid lines with the left y-axis
+                }
+            }
+        }
+    }
+});

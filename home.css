@@ -562,8 +562,9 @@ main {
     width: 100%;
     margin-top: 30px;
     height: 350px;
-    ;
-    background-color: blue;
+    display:flex;
+    gap:30px;
+    /* background-color: blue; */
     object-fit: cover;
 }
 
@@ -579,10 +580,11 @@ main {
     align-items: flex-start;
     flex-direction: column;
     overflow: hidden;
+    box-shadow: 1px 1px 10px -3px rgb(182, 204, 227);
 }
 
 .top-countries p {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 700;
 }
 
@@ -599,6 +601,28 @@ main {
     fill: gray;
     cursor: pointer;
 }
+
+.performance{
+    width: 58%;
+    height:100%;
+    background-color: white;
+    border-radius:15px; 
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px -3px rgb(182, 204, 227);
+}
+
+.performance p {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+
 
 
 
