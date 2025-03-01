@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="createOffer.css" />
+    <script src="createOffer.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="images/vedhaka logo.png" alt="vedhaka-logo" />
+      </div>
+      <div class="nav-lists">
+        <ul>
+          <div class="lists-container">
+            <li>
+              <span class="icon dashboard"
+                ><i class="fa-solid fa-house"></i></span
+              ><span class="description display-none">Dashboard</span>
+            </li>
+          </div>
+          <div class="lists-container hidden-lists-container">
+            <li>
+              <span class="icon offers"
+                ><i class="fa-solid fa-earth-americas"></i></span
+              ><span class="description display-none">Offers</span
+              ><span class="arrow-sign"
+                ><i class="fa-solid fa-angle-right"></i
+              ></span>
+            </li>
+            <div class="hidden-list offers-hidden-list display-none">
+              <ul>
+                <li class="display-none">Create Offer</li>
+                <li class="display-none">Offers Live</li>
+                <li class="display-none">Approved Request</li>
+                <li class="display-none">Offer Affiliate Links</li>
+              </ul>
+            </div>
+          </div>
+          <div class="lists-container hidden-lists-container">
+            <li>
+              <span class="icon reports"
+                ><i class="fa-solid fa-chart-pie"></i></span
+              ><span class="description display-none">Reports</span
+              ><span class="arrow-sign"
+                ><i class="fa-solid fa-angle-right"></i
+              ></span>
+            </li>
+            <div class="hidden-list reports-hidden-list display-none">
+              <ul>
+                <li>Reports</li>
+                <li>Reports KPI</li>
+                <li>Conversion Logs</li>
+                <li>Affiliate Postback Logs</li>
+                <li>Advertiser Postback Logs</li>
+              </ul>
+            </div>
+          </div>
+          <div class="lists-container hidden-lists-container">
+            <li>
+              <span class="icon affiliates"
+                ><i class="fa-solid fa-user"></i></span
+              ><span class="description display-none">Affiliates</span
+              ><span class="arrow-sign"
+                ><i class="fa-solid fa-angle-right"></i
+              ></span>
+            </li>
+            <div class="hidden-list affiliates-hidden-list display-none">
+              <ul>
+                <li>Affiliates</li>
+                <li>Pending Affiliates</li>
+                <li>Affiliate Postback</li>
+                <li>Affiliate Billing</li>
+                <li>Postback Test</li>
+              </ul>
+            </div>
+          </div>
+          <div class="lists-container hidden-lists-container">
+            <li>
+              <span class="icon advertisers"
+                ><i class="fa-solid fa-user-tie"></i></span
+              ><span class="description display-none">Advertisers</span
+              ><span class="arrow-sign"
+                ><i class="fa-solid fa-angle-right"></i
+              ></span>
+            </li>
+            <div class="hidden-list advertisers-hidden-list display-none">
+              <ul>
+                <li>Advertisers</li>
+                <li>Advertiser's billing</li>
+              </ul>
+            </div>
+          </div>
+          <div class="lists-container hidden-lists-container">
+            <li>
+              <span class="icon fraud-detection"
+                ><i class="fa-solid fa-virus"></i></span
+              ><span class="description display-none">Fraud Detection</span
+              ><span class="arrow-sign"
+                ><i class="fa-solid fa-angle-right"></i
+              ></span>
+            </li>
+            <div class="hidden-list fraud-detection-hidden-list display-none">
+              <ul>
+                <li>Advertisers</li>
+                <li>Advertiser's billing</li>
+              </ul>
+            </div>
+          </div>
+          <div class="lists-container hidden-lists-container">
+            <li>
+              <span class="icon integration"
+                ><i class="fa-solid fa-network-wired"></i></span
+              ><span class="description display-none">Integration</span
+              ><span class="arrow-sign"
+                ><i class="fa-solid fa-angle-right"></i
+              ></span>
+            </li>
+            <div class="hidden-list integration-hidden-list display-none">
+              <ul>
+                <li>Advertisers</li>
+                <li>Advertiser's billing</li>
+              </ul>
+            </div>
+          </div>
+          <div class="lists-container hidden-lists-container">
+            <li>
+              <span class="icon account"
+                ><i class="fa-solid fa-user-gear"></i></span
+              ><span class="description display-none">Accounts</span
+              ><span class="arrow-sign"
+                ><i class="fa-solid fa-angle-right"></i
+              ></span>
+            </li>
+            <div class="hidden-list accounts-hidden-list display-none">
+              <ul>
+                <li>Advertisers</li>
+                <li>Advertiser's billing</li>
+              </ul>
+            </div>
+          </div>
+          <div class="lists-container">
+            <li>
+              <span class="icon billing"
+                ><i class="fa-solid fa-credit-card"></i></span
+              ><span class="description display-none">Billing</span>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="top-nav">
+        <div class="shortcuts">
+          <span class="shortcut-icon top-nav-icons"
+            ><i class="fa-solid fa-arrow-up-right-from-square"></i></span
+          ><span class="shortcut"
+            >Shortcut<i class="fa-solid fa-angle-down"></i></span
+          ><span class="shortcut-down-arrow-icon top-nav-icons"></span>
+        </div>
+        <div class="top-nav-list">
+          <ul>
+            <li>What's new</li>
+            <li>
+              <span class="bell-icon top-nav-icons"
+                ><i class="fa-regular fa-bell"></i></span
+              ><span class="notification">Notifictions</span>
+            </li>
+            <li>
+              <span class="support-phone-icon top-nav-icons"
+                ><i class="fa-solid fa-phone"></i></span
+              ><span class="support">Support</span
+              ><span class="support-down-icon top-nav-icons"
+                ><i class="fa-solid fa-caret-down"></i
+              ></span>
+            </li>
+            <li>
+              <span class="language-globe-icon top-nav-icons"
+                ><i class="fa-solid fa-globe"></i></span
+              ><span class="language">Lang</span
+              ><span class="language-down-icon top-nav-icons"
+                ><i class="fa-solid fa-caret-down"></i
+              ></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section class="create-offer-section">
+        <h2 id="heding-create-offer">Create Offer</h2>
+        <div class="loader">
+          <div class="loader-filler"></div>
+        </div>
+        <hr />
+        <div class="create-offer-steps">
+          <div class="create-offer-general steps">
+            <i class="fa-solid fa-sliders"></i>
+            <p>GENERAL- STEP 1</p>
+          </div>
+          <div class="create-offer-targeting steps">
+            <i class="fa-solid fa-earth-americas"></i>
+            <p>TARGETTING- STEP 2</p>
+          </div>
+          <div class="create-offer-creatives steps">
+            <i class="fa-solid fa-images"></i>
+            <p>CREATIVES- STEP 3</p>
+          </div>
+          <div class="create-offer-affiliates steps">
+            <i class="fa-solid fa-users"></i>
+            <p>GENERAL- STEP 4</p>
+          </div>
+        </div>
+        <div class="step1-form-container  ">
+          <form action="">
+            <div class="offer-name">
+              <label for="offer-name">Offer Name</label>
+              <input type="text" id="offer-name" />
+            </div>
+            <div class="advertiser-offer-category">
+              <div class="advertiser">
+                <label for="">Advertiser</label>
+                <input type="text" id="advertiser" />
+              </div>
+              <div class="offer-category">
+                <label for="offer-category">Offer Category</label>
+                <input type="text" id="offer-category" />
+              </div>
+            </div>
+            <div class="appId-external-offerId">
+              <div class="appId">
+                <label for="appId">AppID</label>
+                <input type="text" id="appId" />
+              </div>
+              <div class="external-offerId">
+                <label for="external-offerId">External OfferID</label>
+                <input type="text" id="external-offerId" />
+              </div>
+            </div>
+            <div class="offer-preview-url">
+              <label for="offer-preview-url">Offer Preview URL</label>
+              <input type="text" id="offer-preview-url" />
+            </div>
+            <div class="offer-url">
+              <div class="offer-url-textarea">
+                <label for="">Offer URL</label>
+                <textarea name="" id="" rows="6" cols="80"></textarea>
+              </div>
+              <div class="advertiser-url-builder">
+                  <p id="url-builder-extension"><i class="fa-solid fa-square-arrow-up-right"></i>Advertiser URL Builder</p>
+                  <div class="advertiser-url-builder-pop-up-container display-none">
+                    <i class="fa-solid fa-xmark" id="cross-mark-popup"></i>
+                     <div class="advertiser-url-builder-pop-up">
+                      <h4 id="heading-url-builder"><i class="fa-solid fa-square-arrow-up-right"></i> Advertiser URL Builder</h4>
+                      <div class="select-partner-advertiser">
+                        <p>Select Partner / Advertiser</p>
+                        <select id="select-advertiser-partner">
+                          <option value="AutoDetect">AutoDetect</option>
+                          <option value="offer18">Offer18</option>
+                          <option value="cake">Cake</option>
+                          <option value="optimise">Optimise</option>
+                          <option value="offerStook">OfferStook</option>
+                          <option value="offersHub">OffersHub</option>
+                          <option value="inmobi">Inmobi</option>
+                          <option value="trackier">Trackier</option>
+                        </select>
+                      </div>
+                      <div class="advertiser-offer-url-paste">
+                          <p>Advertiser / Offer URL (Paste): </p>
+                          <textarea name="" id="advertiser-offer-url-paste-textarea" rows="5" cols="100"></textarea>
+                      </div>
+                      <button id="add-more-tokens"><i class="fa-solid fa-angle-down"></i>Add More Tokens</button>
+                      <div class="results">
+                          <p>Results: </p>
+                          <textarea name="" id="results-textarea" rows="7" cols="120"></textarea>
+                      </div>
+                     </div> 
+                  </div>
+              </div>
+            </div>
+            <div class="advertiser-pricing">
+              <label>Advertiser Pricing (Revenue)</label>
+              <select name="" id="advertiser-pricing-model">
+                <option value=""></option>
+              </select>
+              <input type="number" id="advertiser-pricing-deficit"/>
+              <select name="" id="advertiser-pricing-currency">
+                <option value=""></option>
+              </select>
+            </div>
+            <div class="affiliate-pricing">
+              <label>Affiliate Pricing (Payout)</label>
+              <select name="" id="affiliate-pricing-model">
+                <option value=""></option>
+              </select>
+              <input type="number" id="affiliate-pricing-deficit"/>
+            </div>
+            <div class="schedule-daily-start-stop">
+              <div class="schedule">
+                <label for="">Schedule</label>
+                <input type="datetime-local" />
+                <input type="datetime-local" />
+              </div>
+              <div class="daily-start-stop">
+                <label for="">Daily Start/Stop</label>
+                <input type="datetime-local" />
+                <input type="datetime-local" />
+              </div>
+            </div>
+            <div class="offer-visibility-status-alert-affiliates">
+              <div class="offer-visibility">
+                <label>Offer Visibility</label>
+                <select name="" id="offer-visibility">
+                  <option value="public" selected>Public</option>
+                  <option value="public+require-Approval" selected>
+                    Public + Require Approval
+                  </option>
+                  <option value="private" selected>Private</option>
+                </select>
+              </div>
+              <div class="status">
+                <label>Status</label>
+                <select name="" id="">
+                  <option value="approve">Approve</option>
+                  <option value="pending">Pending</option>
+                  <option value="ended">Ended</option>
+                </select>
+              </div>
+            </div>
+            <div class="deeplinks"></div>
+          </form>
+        </div>
+      </section>
+      
+    </main>
+
+  </body>
+</html>

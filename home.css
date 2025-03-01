@@ -9,7 +9,7 @@ body {
 }
 
 nav {
-    width: 75px;
+    width: 5%;
     height: 100vh;
     font-size: 12px;
     font-weight: 300;
@@ -20,6 +20,7 @@ nav {
     left: 0;
     top: 0;
     bottom: 0;
+    z-index:3;
 }
 
 nav:hover {
@@ -161,16 +162,16 @@ nav::-webkit-scrollbar {
 
 /*-----------i am designing the top nav from here-----------------------*/
 main {
-    /* border:5px solid black; */
-    margin-left: 75px;
+    width:95%;
     padding: 12px;
     background-color: rgb(238, 242, 245);
+    position:absolute;
+    right:0;
+    z-index:2;
     font-family: "Roboto", serif;
 }
 
 .top-nav {
-    /* background-color: red; */
-    width: 100%;
     height: 40px;
     font-size: 12px;
     font-weight: 500;
@@ -206,16 +207,18 @@ main {
 
 /*-------------Onboarding steps--------*/
 .onboarding-steps {
+    width:100%;
     display: flex;
     gap: 20px;
-    margin-top: 12px;
-    margin-left: 20px;
+    /* margin-top: 12px; */
+    /* margin-left: 20px; */
 }
 
 
 
 .onboarding-steps-heading {
-    width: 5vw;
+    width: 7vw;
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -225,8 +228,8 @@ main {
 }
 
 .onboarding-steps-heading h5 {
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 500;
     text-align: center;
 }
 
@@ -244,16 +247,16 @@ main {
 
 .onboarding-div {
     /* background-color: red; */
-    width: 15.5vw;
-    min-height: 60px;
+    width: 16vw;
+    min-height: 55px;
     padding: 5px 30px;
     background-color: rgb(204, 229, 255);
-    border-radius: 15px;
+    border-radius: 12px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
-    box-shadow: 1px 1px 6px -3px black;
+    /* box-shadow: 0px 0px 6px -3px black; */
 }
 
 .onboarding-div:nth-child(2) {
@@ -272,37 +275,55 @@ main {
 
 .onboarding-div .onboarding-step-number {
     color: blue;
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 600;
     margin-bottom: 3px;
 }
 
 .onboarding-div .step-feature {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
 }
 
-
-
+/*I am designing the dashboard from here*/
+.dashboard{
+    width:100%;
+    display: flex;
+    /* justify-content: space-between; */
+}
+.left-dashboard{
+    width:75%;
+    flex-shrink: 0;
+}
+.right-dashboard{
+    width:25%;
+    padding:20px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
 /*-------I am designing the dashboard features from here----------*/
 .dashboard-features {
     /* background-color:blue; */
-    width: 80%;
+    width: 100%;
 }
 
-.dashboard-features .conversion-status-container {
+.conversion-status-container {
     width: 100%;
     margin-top: 15px;
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
+    /* justify-content: space-between; */
 }
 
 .conversions {
     background-color: white;
-    width: 21%;
+    width: 25%;
     min-height: 330px;
     padding: 20px;
     border-radius: 20px;
+    flex-shrink: 0;
     box-shadow: 1px 1px 10px -3px rgb(182, 204, 227);
 }
 
@@ -393,13 +414,13 @@ main {
 /*-----------I am designing the status bar of the dashbord----------*/
 
 .all-status {
-    width: 73%;
+    width: 75%;
     /* min-height: 310px; */
     padding: 20px;
     background-color: white;
     border-radius: 25px;
     display: grid;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     /* border:2px solid black; */
     box-shadow: 1px 1px 10px -3px rgb(182, 204, 227);
     grid-template-columns: repeat(3, 1fr);
@@ -627,7 +648,6 @@ main {
 .entries-container{
     width:100%;
     background-color: white;
-    width:80%;
     min-height: 400px;
     margin-top: 30px;
     border-radius: 15px;
@@ -717,16 +737,19 @@ main {
 
 
 /*--------------i am designing the left side of the dashboard------------*/
-.right-dashboard{
+/* .right-dashboard{
     width:24%;
     border-radius: 15px;
-    background-color: red;
     padding:20px;
-}
+} */
 
 .right-dashboard .igaming-demo{
     width:100%;
     /* height:150px; */
+    border-radius:15px;
+    padding:15px;
+    background-color: white;
+    color:black;
     display:flex;
     justify-content: centre;
     align-items: flex-start;
@@ -738,7 +761,7 @@ main {
     height:37px;
     border-radius:10px;
     background-color:#3A72EF;
-    color:white;
+    /* color:white; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -747,14 +770,14 @@ main {
 .right-dashboard .igaming-demo h1{
     font-size:14.4px;
     font-weight:600;
-    color:white;
+    /* color:white; */
     margin-bottom:8px;
 }
 
 .right-dashboard .igaming-demo p{
     font-size:12px;
     font-weight:350;
-    color:white;
+    /* color:white; */
     margin-bottom:8px;
 }
 
@@ -769,7 +792,225 @@ main {
 
 
 
+/* ----------I am designing the knowledge account signup ---------*/
 
+.knowledge-account-signup{
+    min-height:250px;
+    padding:15px;
+    border-radius:15px;
+    background-color:white;
+    box-shadow: 1px 1px 10px -3px rgb(182, 204, 227);
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+
+.knowledge-account-signup .knowledge-base{
+    display:flex;
+}
+
+.knowledge-account-signup .account-manager{
+    display:flex;
+}
+
+.knowledge-account-signup .signup-link{
+    display:flex;
+}
+
+.knowledge-base{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.knowledge-base-image{
+    width:40px;
+    height:40px;
+    margin-right:20px;
+    background-color: rgb(191, 228, 254);
+    border-radius:10px;
+    display:flex;
+    flex-shrink:0;
+    justify-content: center;
+    align-items: center; 
+}
+
+.knowledge-base-features{
+    height:40px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+.knowledge-base-features h3{
+    font-size: 14.4px;
+    font-weight: 600;
+}
+
+.knowledge-base-features p{
+    font-size: 12px;
+}
+
+.account-manager{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.account-manager-image{
+    width:40px;
+    height:40px;
+    margin-right:20px;
+    background-color: rgb(191, 228, 254);
+    border-radius:10px;
+    display:flex;
+    flex-shrink:0;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-manager-features{
+    height:40px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+.account-manager-features h3{
+    font-size: 14.4px;
+    font-weight: 600;
+}
+
+.account-manager p{
+    font-size: 12px;
+}
+
+.signup-link{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+}
+
+.signup-link-features{
+    height:40px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+.signup-link h3{
+    font-size: 14.4px;
+    font-weight: 600;
+}
+
+.signup-link p{
+    font-size: 12px;
+}
+
+.signup-link-image{
+    width:40px;
+    height:40px;
+    margin-right:20px;
+    background-color: rgb(191, 228, 254);
+    border-radius:10px;
+    display:flex;
+    flex-shrink:0;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*I am styling the doughnut chart from here*/
+.dougnut-chart-top-affiliates{
+    min-height:250px;
+    padding:15px;
+    /* border:2px solid black; */
+    border-radius:15px;
+    background-color:white;
+    box-shadow: 1px 1px 10px -3px rgb(182, 204, 227);
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+
+.dougnut-chart-top-affiliates h2{
+    font-size: 14.4px;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+.top-affiliates-table{
+    margin-top:10px;
+}
+
+.top-affiliates-table table{
+    width:100%;
+    border-spacing:0;
+    font-size:12px;
+}
+.top-affiliates-table table thead{
+    height:34px;
+    border-radius:10px;
+    text-align:left;
+    background-color: rgb(222, 228, 238);
+}
+.top-affiliates-table table thead tr th{
+    padding:8px;
+}
+
+.top-affiliates-table table tbody{
+    font-weight:400;
+}
+
+.top-affiliates-table table tbody tr td{
+    padding:8px;
+}
+
+
+/*I am designing the top employees from here*/
+.top-employees{
+    min-height:250px;
+    padding:15px;
+    /* border:2px solid black; */
+    border-radius:15px;
+    background-color:white;
+    box-shadow: 1px 1px 10px -3px rgb(182, 204, 227);
+    display:flex;
+    flex-direction:column;
+    /* justify-content: space-around; */
+}
+
+.top-employees h2{
+    font-size: 14.4px;
+    font-weight:600;
+    margin-bottom:18px; 
+}
+
+.top-employees h2 span{
+    font-size:12px;
+    color:rgb(108, 117, 125);
+}
+
+.top-employees table{
+    width:100%;
+    border-spacing:0;
+    font-size:12px;
+}
+
+.top-employees table thead{
+    height:34px;
+    border-radius:10px;
+    text-align:left;
+    background-color: rgb(222, 228, 238);
+}
+
+.top-employees table thead tr th{
+    padding:8px;
+}
+
+.top-affiliates-table table tbody{
+    font-weight:400;
+}
 
 
 
@@ -819,3 +1060,5 @@ main {
     transition: height 0.4s ease-in-out;
     border-left: 4px solid rgb(15, 174, 222);
 }
+
+

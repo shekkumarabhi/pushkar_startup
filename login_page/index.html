@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in page</title>
-    <link rel="stylesheet" href="/CSS/style.css">
-    <script src="/SCRIPT/script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -36,8 +36,8 @@
                     <fieldset>
                         <legend>Login</legend>
                         <div class="input-label">
-                            <input type="email" id="email" placeholder="Enter email*" class="email input">
-                            <input type="password" id="password" placeholder="Password*" class="password input">
+                            <input type="email" id="email-input" placeholder="Enter email*" class="email input" required>
+                            <input  id="password-input" placeholder="Password*" class="password input" required>
                         </div>
                         <div class="terms-conditions">
                             <div class="remember-me">
@@ -45,7 +45,7 @@
                                 <label for="terms-conditions">Remember me</label>
                             </div>
                         </div>
-                        <input type="submit" value="log In" class="submit">
+                        <input type="submit" value="log In" class="submit" id="submit">
                     </fieldset>
                 </form>
             </div>

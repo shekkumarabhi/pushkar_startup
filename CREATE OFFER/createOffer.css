@@ -1,0 +1,749 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", serif;
+  background-color: rgb(238, 242, 245);
+}
+
+nav {
+  width: 5%;
+  height: 100vh;
+  font-size: 12px;
+  font-weight: 300;
+  background-color: rgb(39, 33, 33);
+  color: white;
+  box-shadow: 0 4px 8px 5px rgb(128 120 139);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+nav:hover {
+  transition: width 0.4s ease-in-out;
+  overflow-y: scroll;
+  width: 180px;
+}
+
+nav::-webkit-scrollbar {
+  width: 5px;
+}
+
+.logo {
+  width: 100%;
+  height: 50px;
+  margin-inline: auto;
+  padding: 5px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 80%;
+  height: 100%;
+}
+
+/* .logo i{
+    width:18%;
+    height:100%;
+} */
+
+.nav-lists {
+  margin-top: 150px;
+  margin-inline: auto;
+}
+
+.nav-lists ul li {
+  height: 14px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  /* flex-wrap:nowrap; */
+  list-style: none;
+}
+
+.icon {
+  display: inline-block;
+  width: 49%;
+  padding-left: 30px;
+}
+
+.description {
+  width: 85%;
+  /* height:15px; */
+  overflow: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-content: normal;
+}
+
+.arrow-sign {
+  display: inline-block;
+  padding-right: 8px;
+  width: 49%;
+  text-align: right;
+  cursor: pointer;
+}
+
+.dashboard i {
+  color: rgb(35, 183, 229);
+}
+
+.offers i {
+  color: rgb(82, 143, 240);
+}
+
+.reports i {
+  color: rgb(251, 225, 101);
+}
+
+.affiliates i {
+  color: rgb(39, 194, 76);
+}
+
+.advertisers i {
+  color: rgb(241, 154, 94);
+}
+
+.fraud-detection i {
+  color: rgb(255, 65, 65);
+}
+
+.integration i {
+  color: rgb(167, 222, 62);
+}
+
+.account i {
+  color: rgb(82, 143, 240);
+}
+
+.billing i {
+  color: rgb(35, 183, 229);
+}
+
+.lists-container {
+  height: 20px;
+  margin-bottom: 30px;
+}
+
+/*------styling the hidden list from here-------*/
+.hidden-list {
+  width: 100%;
+  color: rgb(184, 178, 178);
+  margin-top: 20px;
+}
+
+.hidden-list ul li {
+  margin-bottom: 15px;
+  padding-left: 52px;
+  text-align: left;
+}
+
+.hidden-list ul li:hover {
+  list-style-type: disc;
+}
+
+.top-nav {
+  width: 100%;
+  height: 40px;
+  font-size: 10px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-nav-icons {
+  margin-inline: 7px;
+}
+
+.shortcuts {
+  width: 39%;
+  padding-left: 10px;
+}
+
+/**------------I am designing the top main section of the page from here -------------*/
+
+main {
+  /* border: 2px solid black; */
+  margin-left: 82px;
+  padding: 5px;
+}
+
+.top-nav-list {
+  width: 60%;
+}
+
+.top-nav-list ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+
+.top-nav-list ul li {
+  margin-left: 15px;
+}
+
+/*-----------------i have started designing the create offer section--------------------*/
+.create-offer-section {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.create-offer-section #heding-create-offer {
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 15px;
+  margin-bottom: 12px;
+}
+
+/*------------------------------I am designing the loader from here------------------------ */
+.loader {
+  /* width:99%; */
+  height: 4px;
+  margin-inline: auto;
+  background-color: white;
+}
+
+.loader-filler {
+  width: 25%;
+  height: 4px;
+  border-radius: 4px solid;
+  background-color: rgb(4, 169, 245);
+}
+
+/*-------------i am designing the create offer form from here -------------------------*/
+
+.create-offer-steps {
+  display: flex;
+}
+
+.create-offer-steps .steps {
+  width: 14%;
+  min-height: 40px;
+  /* border:2px solid black; */
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+/*----------------I am desingining the  step1 form container ---------------*/
+.step1-form-container {
+  font-size: 11px;
+  padding: 35px 30px;
+  font-weight: 500;
+  background-color: #fff;
+}
+
+.upper-form{
+  width:89%;
+}
+
+/*i have designed the offername input*/
+.offer-name {
+  display: flex;
+  align-items: flex-start;
+}
+
+.offer-name label {
+  display: inline-block;
+  width: 20%;
+}
+
+.offer-name input {
+  width: 20%;
+  min-height: 20px;
+  padding: 2px 10px;
+  border-radius: 8px;
+  border: 0.8px solid rgb(188, 192, 197);
+  outline: none;
+  background-color: rgb(249, 247, 247);
+}
+
+/*i have designed the offername input*/
+.advertiser-offer-category {
+  margin-top: 32px;
+  display: flex;
+}
+
+.advertiser {
+  width: 50%;
+}
+
+.advertiser label {
+  display: inline-block;
+  width: 39.5%;
+}
+
+.advertiser input {
+  width: 40.5%;
+  min-height: 20px;
+  padding: 2px 10px;
+  border-radius: 8px;
+  border: 0.8px solid rgb(188, 192, 197);
+  outline: none;
+  background-color: rgb(249, 247, 247);
+}
+
+.offer-category {
+  width: 50%;
+}
+
+.offer-category label {
+  display: inline-block;
+  width: 39.5%;
+}
+
+.offer-category input {
+  width: 40.5%;
+  min-height: 20px;
+  padding: 2px 10px;
+  border-radius: 8px;
+  border: 0.8px solid rgb(188, 192, 197);
+  outline: none;
+  background-color: rgb(249, 247, 247);
+}
+
+/*----------------I am desingning the appId external offerId --------------------------*/
+.appId-external-offerId {
+  margin-top: 32px;
+  display: flex;
+}
+
+.appId {
+  width: 50%;
+}
+
+.appId label {
+  display: inline-block;
+  width: 39.5%;
+}
+
+.appId input {
+  width: 40.5%;
+  min-height: 20px;
+  padding: 2px 10px;
+  border-radius: 8px;
+  border: 0.8px solid rgb(188, 192, 197);
+  outline: none;
+  background-color: rgb(249, 247, 247);
+}
+
+.external-offerId {
+  width: 50%;
+}
+
+.external-offerId label {
+  display: inline-block;
+  width: 39.5%;
+}
+
+.external-offerId input {
+  width: 40.5%;
+  min-height: 20px;
+  padding: 2px 10px;
+  border-radius: 8px;
+  border: 0.8px solid rgb(188, 192, 197);
+  outline: none;
+  background-color: rgb(249, 247, 247);
+}
+
+/*-------------I am designing the Offer Preview URL-------------------------*/
+.offer-preview-url {
+  width: 100%;
+  margin-top: 32px;
+}
+
+.offer-preview-url label {
+  display: inline-block;
+  width: 19.7%;
+}
+
+.offer-preview-url input {
+  width: 70.5%;
+  min-height: 20px;
+  padding: 2px 10px;
+  border-radius: 8px;
+  border: 0.8px solid rgb(188, 192, 197);
+  outline: none;
+  background-color: rgb(249, 247, 247);
+}
+
+/*-------------I am designing the Offer URL from here-------------------------*/
+
+.offer-url{
+  margin-top: 32px;
+  display:flex;
+  align-items: center;
+}
+
+.offer-url-textarea {
+  width: 70%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.offer-url-textarea label {
+  display: inline-block;
+  width: 28.7%;
+}
+
+.offer-url-textarea textarea {
+  width: 70.9%;
+  min-height: 45px;
+  padding: 2px 10px;
+  border-radius: 8px;
+  border: 0.8px solid rgb(188, 192, 197);
+  outline: none;
+  background-color: rgb(249, 247, 247);
+}
+
+.advertiser-url-builder{
+  width:20%;
+  margin-left:20px;
+  align-self: start;
+  cursor:pointer;
+}
+
+/*-------------I am designing the advertiser pricing from here-------------------------*/
+
+.advertiser-pricing {
+  width: 80%;
+  margin-top: 32px;
+}
+
+.advertiser-pricing label {
+  display: inline-block;
+  width: 24.7%;
+}
+
+.advertiser-pricing #advertiser-pricing-model {
+  display: inline-block;
+  width: 19%;
+  margin-right: 30px;
+  min-height: 20px;
+  padding: 2px 10px;
+  border-radius: 8px;
+  border: 0.8px solid rgb(188, 192, 197);
+  outline: none;
+  background-color: rgb(249, 247, 247);
+}
+
+.advertiser-pricing #advertiser-pricing-deficit {
+  display: inline-block;
+  width: 19%;
+  margin-right: 30px;
+  min-height: 20px;
+  padding: 2px 10px;
+  border-radius: 8px;
+  border: 0.8px solid rgb(188, 192, 197);
+  outline: none;
+  background-color: rgb(249, 247, 247);
+}
+
+.advertiser-pricing #advertiser-pricing-currency {
+  display: inline-block;
+  width: 19%;
+  margin-right: 30px;
+  min-height: 20px;
+  padding: 2px 10px;
+  border-radius: 8px;
+  border: 0.8px solid rgb(188, 192, 197);
+  outline: none;
+  background-color: rgb(249, 247, 247);
+}
+
+/*-------------I am designing the affiliate pricing from here-------------------------*/
+.affiliate-pricing {
+  width: 80%;
+  margin-top: 32px;
+}
+
+.affiliate-pricing label {
+  display: inline-block;
+  width: 24.7%;
+}
+
+.affiliate-pricing #affiliate-pricing-model {
+  display: inline-block;
+  width: 19%;
+  margin-right: 30px;
+  min-height: 20px;
+  padding: 2px 10px;
+  border-radius: 8px;
+  border: 0.8px solid rgb(188, 192, 197);
+  outline: none;
+  background-color: rgb(249, 247, 247);
+}
+
+.affiliate-pricing #affiliate-pricing-deficit {
+  display: inline-block;
+  width: 19%;
+  margin-right: 30px;
+  min-height: 20px;
+  padding: 2px 10px;
+  border-radius: 8px;
+  border: 0.8px solid rgb(188, 192, 197);
+  outline: none;
+  background-color: rgb(249, 247, 247);
+}
+
+/*-------------------I am designing the schedule daily start stop-------------------*/
+.schedule-daily-start-stop {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 32px;
+  width: 100%;
+}
+.schedule-daily-start-stop .schedule {
+  margin-right: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+.schedule-daily-start-stop .schedule label {
+  width: 273px;
+  display: inline-block;
+}
+
+.schedule-daily-start-stop .schedule input {
+  width: 140px;
+  min-height: 20px;
+  padding: 2px 10px;
+  border-radius: 8px;
+  border: 0.8px solid rgb(188, 192, 197);
+  outline: none;
+  background-color: rgb(249, 247, 247);
+}
+
+.schedule-daily-start-stop .daily-start-stop {
+  display: flex;
+  align-items: flex-start;
+}
+
+.schedule-daily-start-stop .daily-start-stop label {
+  display: inline-block;
+  width: 140px;
+  height: 28px;
+  border-radius: 4px;
+}
+
+.schedule-daily-start-stop .daily-start-stop input {
+  width: 140px;
+  min-height: 20px;
+  padding: 2px 10px;
+  border-radius: 8px;
+  border: 0.8px solid rgb(188, 192, 197);
+  outline: none;
+  background-color: rgb(249, 247, 247);
+}
+
+/*-----------------I am designing the offer visibility status alert affiliates----------*/
+.offer-visibility-status-alert-affiliates {
+  width: 100%;
+  margin-top: 32px;
+  display: flex;
+}
+
+.offer-visibility-status-alert-affiliates .offer-visibility {
+  margin-right: 60px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.offer-visibility-status-alert-affiliates .offer-visibility label {
+  display: inline-block;
+  width: 273px;
+}
+
+.offer-visibility-status-alert-affiliates .offer-visibility select {
+  width: 140px;
+  min-height: 20px;
+  padding: 2px 10px;
+  border-radius: 8px;
+  border: 0.8px solid rgb(188, 192, 197);
+  outline: none;
+  background-color: rgb(249, 247, 247);
+}
+
+.offer-visibility-status-alert-affiliates .status {
+  display: flex;
+  align-items: flex-start;
+}
+
+.offer-visibility-status-alert-affiliates .status label {
+  display: inline-block;
+  width: 80px;
+}
+
+.offer-visibility-status-alert-affiliates .status select {
+  width: 140px;
+  min-height: 20px;
+  padding: 2px 10px;
+  border-radius: 8px;
+  border: 0.8px solid rgb(188, 192, 197);
+  outline: none;
+  background-color: rgb(249, 247, 247);
+}
+
+
+
+
+
+
+/*-------------I am designing the advertiser url generator pop up-------------------------*/
+.advertiser-url-builder-pop-up-container {
+  width: 60%;
+  padding: 25px;
+  border-radius: 20px;
+  position: absolute;
+  left:50%;
+  top:0;
+  transform: translate(-50%,0) scale(0.2);
+  background-color: #fff;
+  /* position:absolute; */
+}
+
+.advertiser-url-builder-pop-up-container-transform{
+  transition: transform 10s, top 10s;
+  transform: translate(-50%,-50%) scale(1);
+  top:50%;
+}
+
+.advertiser-url-builder-pop-up-container #cross-mark-popup {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+
+.advertiser-url-builder-pop-up {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-inline: auto;
+  box-shadow: 0px 0px 5px 5px rgb(237, 235, 235);
+}
+
+.advertiser-url-builder-pop-up #heading-url-builder {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.advertiser-url-builder-pop-up #select-advertiser-partner {
+  width: 23%;
+  min-height: 27px;
+  margin-bottom:20px;
+  padding:6px;
+  border: 0.8px solid rgb(188, 192, 197);
+  border-radius: 8px;
+  outline:none;
+  background-color: rgb(240, 238, 238);
+}
+
+.advertiser-offer-url-paste #advertiser-offer-url-paste-textarea{
+   width:100%;
+   min-height: 50px;
+   margin-bottom:30px;
+   border: 0.8px solid rgb(188, 192, 197);
+   border-radius: 8px;
+   outline:none;
+   background-color: rgb(240, 238, 238);
+}
+
+#add-more-tokens{
+    display: inline-block;
+    width:14.5%;
+    min-height:22px;
+    margin-bottom:30px;
+    border-radius: 8px;
+    border:none;
+    outline: none;
+    font-size:10px;
+    font-weight:700;
+    background-color: #0092e0;
+    color:white;
+}
+
+.results #results-textarea{
+    width:100%;
+    min-height: 50px;
+    border-radius: 8px;
+    margin-bottom:30px;
+    outline:none;
+    border: 0.8px solid rgb(188, 192, 197);
+    background-color: rgb(240, 238, 238);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------these are the utility classe------------------*/
+
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.display-hidden {
+  display: hidden;
+}
+
+.rotate-ninety {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.height-max-content {
+  overflow: hidden;
+  height: 150px;
+  transition: height 0.4s ease-in-out;
+  border-left: 4px solid rgb(15, 174, 222);
+}

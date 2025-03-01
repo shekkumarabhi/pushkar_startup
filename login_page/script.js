@@ -4,11 +4,15 @@ const logInFormContainer = document.querySelector('.log-in-form-container')
 const signUpFormContainer = document.querySelector('.sign-up-form-container')
 const register = document.querySelector('.register')
 const logIn = document.querySelector('.login')
-const underline =document.querySelector('.underline')
+const underline = document.querySelector('.underline')
 
+//log in button
+const loginForm = document.querySelector('.login-form')
+const emailInput = document.querySelector('#email-input')
+const passwordInput = document.querySelector('#password-input')
 
-
-register.addEventListener('click',()=>{
+//for moving to the register part
+register.addEventListener('click', () => {
     logInFormContainer.classList.remove('display-flex')
     logIn.classList.remove('underline')
     logInFormContainer.classList.add('display-none')
@@ -17,7 +21,9 @@ register.addEventListener('click',()=>{
     register.classList.add('underline')
 })
 
-logIn.addEventListener('click', ()=>{
+
+//for moving to the log in part
+logIn.addEventListener('click', () => {
     register.classList.remove('underline')
     logIn.classList.add('underline')
     signUpFormContainer.classList.remove('display-flex')
@@ -25,3 +31,26 @@ logIn.addEventListener('click', ()=>{
     logInFormContainer.classList.remove('display-none')
     logInFormContainer.classList.add('display-flex')
 })
+
+
+//sending the data to the backend
+loginForm.addEventListener('submit', (e) => {
+    e.preventDefault()
+    let email = emailInput.value
+    let password = passwordInput.value  
+    fetch('http://vedhaka.tech/api/user/login/', {
+        method: 'POST',
+        headers: { 'Content-type': 'application/json' },
+        body: JSON.stringify(
+            {
+                email: email,
+                password: password
+            }
+        )
+    })
+})
+
+
+async function makeRequest(){
+    
+}
