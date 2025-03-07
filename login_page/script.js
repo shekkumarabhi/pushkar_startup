@@ -38,7 +38,7 @@ loginForm.addEventListener('submit', (e) => {
     e.preventDefault()
     let email = emailInput.value
     let password = passwordInput.value  
-    fetch('http://vedhaka.tech/api/user/login/', {
+    fetch('http://127.0.0.1:8000/api/user/login/', {
         method: 'POST',
         headers: { 'Content-type': 'application/json' },
         body: JSON.stringify(
