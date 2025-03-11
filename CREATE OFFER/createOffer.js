@@ -11,6 +11,8 @@ const hiddenListsContainer = document.querySelectorAll('.hidden-lists-container'
 const urlBuiulderExtension = document.querySelector('#url-builder-extension')
 const advertiserUrlBuilderPopUpContaineer = document.querySelector('.advertiser-url-builder-pop-up-container')
 const crossMarkPopUp= document.querySelector('#cross-mark-popup')
+const tokensClick = document.querySelector('#tokens-click')
+const tokenListContainer = document.querySelector('.token-list-container')
 
 nav.addEventListener('mouseenter', () => {
     for (let i = 0; i <= descriptions.length - 1; i++) {
@@ -70,4 +72,13 @@ urlBuiulderExtension.addEventListener('click',()=>{
 crossMarkPopUp.addEventListener('click', ()=>{
     advertiserUrlBuilderPopUpContaineer.classList.add('display-none')
     advertiserUrlBuilderPopUpContaineer.classList.remove('advertiser-url-builder-pop-up-container-transform')
+})
+
+
+
+
+
+//i will be designing the section from here*/
+tokensClick.addEventListener('click',()=>{
+    tokenListContainer.classList.remove('display-none')
 })

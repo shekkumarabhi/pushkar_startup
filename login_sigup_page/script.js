@@ -11,6 +11,10 @@ const loginForm = document.querySelector('.login-form')
 const emailInput = document.querySelector('#email-input')
 const passwordInput = document.querySelector('#password-input')
 
+
+
+
+
 //for moving to the register part
 register.addEventListener('click', () => {
     logInFormContainer.classList.remove('display-flex')
@@ -49,10 +53,45 @@ loginForm.addEventListener('submit', (e) => {
         )
     }).then((data)=>{
          console.log(data)
+    }).catch((error)=>{
+         console.log(error)
     })
 })
 
 
-async function makeRequest(){
-    
-}
+//signup foprm input values
+const signUpForm = document.querySelector('.sign-up-form')
+const firstName = document.querySelector('#first-name').value
+const lastName = document.querySelector('#last-name').value
+const enterPassword = document.querySelector('#enter-password').value
+const confirmPassword = document.querySelector('#confirm-password').value
+const emailId = document.querySelector('#email-ID').value
+const phoneNumber = document.querySelector('#phone-number').value
+const skypeId = document.querySelector('#skype-ID').value
+const organisationName = document.querySelector('#organisation-name').value
+const organisationWebsite = document.querySelector('#orgainsation-website').value
+const signUpSubmit = document.querySelector('#sign-up-submit')
+
+'f_name', 'l_name', 'email', 'company_name', 'company_website', 'password'
+
+signUpForm.addEventListener('submit',(e)=>{
+    e.preventDefault()
+    fetch('',{
+        method:'POST',
+        headers:{'content-type': 'application/json'},
+        body:JSON.stringify(
+            {
+                f_name:firstName,
+                l_name:lastName,
+                email:emailId,
+                company_name:organisationName,
+                company_website:organisationWebsite,
+                password:enterPassword
+            }
+        )
+    }).then((data)=>{
+        console.log(data)
+    }).catch((error)=>{
+        console.log(error)
+    })
+})
