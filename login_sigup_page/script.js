@@ -72,7 +72,7 @@ const organisationName = document.querySelector('#organisation-name').value
 const organisationWebsite = document.querySelector('#orgainsation-website').value
 const signUpSubmit = document.querySelector('#sign-up-submit')
 
-'f_name', 'l_name', 'email', 'company_name', 'company_website', 'password'
+
 
 signUpForm.addEventListener('submit',(e)=>{
     e.preventDefault()
