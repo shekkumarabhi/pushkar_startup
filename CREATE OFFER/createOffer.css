@@ -691,11 +691,26 @@ main {
 
 
 /*----------i am designing the token list container fromhbere------------*/
+
+#tokens-click{
+  margin-top:10px;
+}
+.tokens{
+  width: 70%;
+  margin-left: 250px;
+  margin-top:30px;
+}
 .token-list-container{
   width:80%;
-  height:245px;
+  max-height:1px;
+  margin-top:10px;
   overflow:scroll;
   background-color: white;
+  transition:max-height 2s ease-out;
+}
+
+.token-list-container-transition{
+  max-height:250px;
 }
 
 .token-list-container h3{

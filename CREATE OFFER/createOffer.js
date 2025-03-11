@@ -11,6 +11,9 @@ const hiddenListsContainer = document.querySelectorAll('.hidden-lists-container'
 const urlBuiulderExtension = document.querySelector('#url-builder-extension')
 const advertiserUrlBuilderPopUpContaineer = document.querySelector('.advertiser-url-builder-pop-up-container')
 const crossMarkPopUp= document.querySelector('#cross-mark-popup')
+
+//from here i am declaring all the varibales used in the token
+const token = document.querySelector('.tokens')
 const tokensClick = document.querySelector('#tokens-click')
 const tokenListContainer = document.querySelector('.token-list-container')
 
@@ -80,5 +83,6 @@ crossMarkPopUp.addEventListener('click', ()=>{
 
 //i will be designing the section from here*/
 tokensClick.addEventListener('click',()=>{
-    tokenListContainer.classList.remove('display-none')
+    tokenListContainer.classList.toggle('display-none')
+    tokenListContainer.classList.toggle('token-list-container-transition')
 })
