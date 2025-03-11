@@ -76,9 +76,9 @@ const signUpSubmit = document.querySelector('#sign-up-submit')
 
 signUpForm.addEventListener('submit',(e)=>{
     e.preventDefault()
-    fetch('',{
+    fetch('https://jsonplaceholder.typicode.com/posts',{
         method:'POST',
-        headers:{'content-type': 'application/json'},
+        headers:{'Content-type': 'application/json'},
         body:JSON.stringify(
             {
                 f_name:firstName,
