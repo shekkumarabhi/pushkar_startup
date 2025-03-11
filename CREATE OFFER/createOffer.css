@@ -690,6 +690,53 @@ main {
 
 
 
+/*----------i am designing the token list container fromhbere------------*/
+.token-list-container{
+  width:80%;
+  height:245px;
+  overflow:scroll;
+  background-color: white;
+}
+
+.token-list-container h3{
+  font-size: 16px;
+  font-weight:400;
+}
+
+.token-list-container h3 i{
+  margin-right: 5px;
+  margin-bottom: 7px;
+}
+.token-list-container ul{
+  padding:9px;
+}
+
+.token-list-container ul li{
+  width:100%;
+  list-style: none;
+  margin-bottom: 3px;
+  /* background-color:blue; */
+}
+
+.token-list-container ul li input{
+  width:40%;
+  margin-right:3px;
+  border-radius:8px;
+  outline:none;
+  border:1px solid rgb(212, 204, 204);
+  min-height:20px;
+  font-size:12px;
+  padding:0 10px;
+  color:black;
+  margin-right: 5px;
+}
+
+.token-list-container ul li span{
+  font-size:12px;
+}
+
+
+
 
 
 

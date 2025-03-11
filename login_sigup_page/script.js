@@ -47,6 +47,8 @@ loginForm.addEventListener('submit', (e) => {
                 password: password
             }
         )
+    }).then((data)=>{
+         console.log(data)
     })
 })
 
